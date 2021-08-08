@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".diamond">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="25dp"
+                android:text="Diamond"
+                android:textSize="17pt"
+                android:fontFamily="serif"
+                android:textColor="#434343"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:hint="Search"
+            android:textColor="#777777"
+            android:textColorHint="#777777"
+            android:elevation="5dp"
+            android:textSize="15sp"
+            android:background="@drawable/costumer_nput"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="12dp"
+            android:paddingStart="12dp"/>
+
+
+
+
+    <GridView
+        android:id="@+id/list_diamond"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+    </GridView>
+
+
+</LinearLayout>
+
+
+</FrameLayout>

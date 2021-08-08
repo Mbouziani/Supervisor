@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".add_room">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="25dp"
+                android:text="Nouveau"
+                android:textSize="17pt"
+                android:fontFamily="serif"
+                android:textColor="#434343"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:hint="Refernces"
+            android:textColor="#777777"
+            android:textColorHint="#777777"
+            android:elevation="5dp"
+            android:textSize="15sp"
+            android:background="@drawable/costumer_nput"
+            android:drawableStart="@drawable/ic_game"
+            android:drawablePadding="12dp"
+            android:paddingStart="12dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:hint="Time"
+            android:textSize="15sp"
+            android:inputType="time"
+            android:textColor="#777777"
+            android:textColorHint="#777777"
+            android:elevation="5dp"
+
+            android:background="@drawable/costumer_nput"
+            android:drawableStart="@drawable/ic_time"
+            android:drawablePadding="12dp"
+            android:paddingStart="12dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/text_nav"
+            android:text="Ajouter"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+</FrameLayout>

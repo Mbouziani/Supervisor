@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Room_menu"
+        android:icon="@drawable/ic_casino"
+        android:title="Room"/>
+    <item
+        android:id="@+id/winner_menu"
+        android:icon="@drawable/ic_kass"
+        android:title="Winer"/>
+    <item
+        android:id="@+id/admin_menu"
+        android:icon="@drawable/ic_game"
+        android:title="Admin"/>
+    <item
+        android:id="@+id/diamond_menu"
+        android:icon="@drawable/ic_winner"
+        android:title="Badge"/>
+</menu>

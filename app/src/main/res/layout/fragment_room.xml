@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".room">
+
+   <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="25dp"
+                android:text="Room"
+                android:textSize="17pt"
+                android:fontFamily="serif"
+                android:textColor="#434343"
+                android:textStyle="bold"/>
+            <ImageButton
+                android:id="@+id/room_add"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_add"
+                android:background="@drawable/transparent_back"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="12dp"
+                android:elevation="5dp"/>
+
+        </RelativeLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:hint="Search"
+            android:textColor="#777777"
+            android:textColorHint="#777777"
+            android:elevation="5dp"
+            android:textSize="15sp"
+            android:background="@drawable/costumer_nput"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="12dp"
+            android:paddingStart="12dp"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rd_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/costumer_serach_button"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingLeft="22dp"
+                    android:paddingRight="20dp"
+                    android:text="ALL"
+                    android:textColor="@drawable/costumer_search_text"
+                    android:textSize="13sp"
+                    android:elevation="5dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/costumer_serach_button"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingLeft="22dp"
+                    android:paddingRight="20dp"
+                    android:text="Runing"
+                    android:textColor="@drawable/costumer_search_text"
+                    android:textSize="15sp"
+                    android:elevation="5dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/costumer_serach_button"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingLeft="22dp"
+                    android:paddingRight="20dp"
+                    android:text="Panding"
+                    android:textColor="@drawable/costumer_search_text"
+                    android:textSize="15sp"
+                    android:elevation="5dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="16dp"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/costumer_serach_button"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingLeft="22dp"
+                    android:paddingRight="20dp"
+                    android:text="Canceled"
+                    android:textColor="@drawable/costumer_search_text"
+                    android:textSize="15sp"
+                    android:elevation="5dp"/>
+
+
+
+
+
+            </RadioGroup>
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+    <GridView
+        android:id="@+id/list_room"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+    </GridView>
+
+
+</LinearLayout>
+
+</FrameLayout>
